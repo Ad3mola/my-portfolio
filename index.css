@@ -1,0 +1,176 @@
+@import url("./css/switch.css");
+@import url("./css/fonts.css");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Apercu, "Source Sans Pro", sans-serif;
+  padding: 3%;
+}
+.main {
+  max-width: 100%;
+  width: 90%;
+  margin: 4em auto;
+}
+
+.night {
+  background-color: #171c28;
+  stroke: white;
+  color: white;
+}
+.day {
+  background-color: #fff;
+  stroke: black;
+  color: black;
+}
+.introduction {
+  max-width: 900px;
+  height: 80vh;
+  line-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.intro_hi,
+.intro-tagline {
+  font-weight: 300;
+  font-size: 2.8rem;
+}
+.intro-tagline {
+  margin-top: 2em;
+  font-size: 2.8rem;
+}
+.intro-contact {
+  font-weight: 300;
+  margin-top: 3em;
+  padding: 0.3rem;
+}
+.intro-contact img {
+  margin-bottom: -0.4rem;
+  padding-left: 0.2rem;
+}
+.contact-email {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: inset 0 -3px 0 #007bff;
+  padding: 0.2em;
+  border-left: 1px solid #007bff;
+  transition: all 0.3s ease-in-out;
+}
+.contact-email:hover {
+  box-shadow: inset 0 -100px 0 #007bff;
+}
+.name {
+  font-weight: 700;
+}
+.emoji {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+}
+.background,
+.skills {
+  display: flex;
+  margin: 5em auto;
+  width: 90%;
+  justify-content: space-evenly;
+}
+.background h4,
+.skills h4 {
+  text-transform: uppercase;
+  color: #007bff;
+  letter-spacing: 0.1rem;
+  margin-right: 7em;
+}
+.background p,
+.skills p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 2em 0;
+}
+.background p:first-child {
+  margin: 0;
+}
+.skills p {
+  margin: 0;
+}
+.night-paragraph {
+  color: #afafbf;
+}
+.important {
+  font-weight: 700;
+  color: white;
+}
+.important a {
+  color: white;
+}
+.skills ul {
+  list-style-type: none;
+  font-weight: 300;
+  color: #afafbf;
+  margin: 0 1.7em;
+}
+.skills ul li {
+  line-height: 1.5em;
+}
+@media (max-width: 760px) {
+  .intro-tagline,
+  .intro_hi {
+    font-size: 1.5rem;
+  }
+  .intro-tagline {
+    margin-top: 3em;
+  }
+  .introduction {
+    line-height: 2.5rem;
+  }
+  .background {
+    flex-direction: column;
+  }
+  .skills {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .skills ul {
+    margin: 1em 0.8em;
+  }
+  .background h4,
+  .skills h4 {
+    padding-bottom: 1.5em;
+  }
+  .background p,
+  .background p:first-child {
+    width: 90%;
+    font-size: 0.9rem;
+    margin-left: auto;
+  }
+  .skills p {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-left: auto;
+  }
+  .important,
+  .skills ul li {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 320px) {
+  .introduction {
+    height: 70vh;
+    max-width: 400px;
+  }
+  .intro-tagline,
+  .intro-contact {
+    margin-top: 1em;
+  }
+  .intro-tagline,
+  .intro_hi {
+    font-size: 1.4rem;
+  }
+}
