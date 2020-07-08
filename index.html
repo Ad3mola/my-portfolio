@@ -45,7 +45,7 @@
     <title>Ademola</title>
   </head>
 
-  <body class="night">
+  <body class="night" id="body">
     <div class="switch-wrapper">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,6 @@
         viewBox="0 0 24 24"
         fill="none"
         stroke=""
-        class="night"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -74,7 +73,6 @@
         <label for="switch"></label>
       </div>
       <svg
-        class="night"
         xmlns="http://www.w3.org/2000/svg"
         width="17"
         height="17"
@@ -190,33 +188,121 @@
       <div class="other-projects">
         <h4>other projects</h4>
         <div class="other-projects-list">
-          <h3 class="important project-links">
-            <a href="/">
-              View My Resume
-              <img
-                src="https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1594172097/new-portfolio-images/arrow_n1cxbt.png"
-                alt="pointer"
-                class="arrow"
-            /></a>
-          </h3>
-          <p class="night-paragraph">
-            I'm currently a freelance Engineer building things for the web with
-            some awesome people. I attended and completed a 3-month software
-            development bootcamp at <span class="important">DreamQube</span> ,
-            the
-            <span class="important">Google Africa Developers</span> scholarship
-            program and interned at
-            <span class="important"
-              >HNG( <a href="hotels.ng"> hotels.ng</a>)</span
-            >
-            shortly after.
-          </p>
-          <div class="stacks">
-            <small>JavaScript</small>
-            <small>CSS</small>
-            <small>HTML</small>
-            <small>HTML</small>
-            <small>HTML</small>
+          <div class="individual-project">
+            <h3 class="important project-links">
+              <a href="https://aduke.netlify.app/">
+                Aduke
+                <img
+                  src="https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1594172097/new-portfolio-images/arrow_n1cxbt.png"
+                  alt="pointer"
+                  class="arrow"
+              /></a>
+            </h3>
+            <p class="night-paragraph">
+              A make-up artist's portfolio webisite that showcases their best
+              works
+            </p>
+            <div class="stacks">
+              <small>JavaScript</small>
+              <small>CSS</small>
+              <small>Materialize</small>
+              <small>Lightbox library</small>
+              <small>HTML</small>
+            </div>
+          </div>
+          <div class="individual-project">
+            <h3 class="important project-links">
+              <a href="https://contactapp.netlify.app/#">
+                Contact Book
+                <img
+                  src="https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1594172097/new-portfolio-images/arrow_n1cxbt.png"
+                  alt="pointer"
+                  class="arrow"
+              /></a>
+            </h3>
+            <p class="night-paragraph">
+              A simple web app I made to help me learn Bootstrap and JavaScript
+              OOP(Object Oriented programming) with ES6 classes. It helps people
+              store their contacts.
+            </p>
+            <div class="stacks">
+              <small>JavaScript</small>
+              <small>CSS</small>
+              <small>Bootstrap</small>
+              <small>localStorage</small>
+              <small>HTML</small>
+            </div>
+          </div>
+          <div class="individual-project">
+            <h3 class="important project-links">
+              <a href="https://react-contact-manager-c99ea.firebaseapp.com/">
+                Contact Manager
+                <img
+                  src="https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1594172097/new-portfolio-images/arrow_n1cxbt.png"
+                  alt="pointer"
+                  class="arrow"
+              /></a>
+            </h3>
+            <p class="night-paragraph">
+              The react version of the contact web app with PWA feature, built
+              with firebase for authentication and storage. I was interested in
+              learning Firebase and the context API, so I found this simple
+              tutorial and it kind of spun into this weekend project and I
+              learned a lot of new things.
+            </p>
+            <div class="stacks">
+              <small>React</small>
+              <small>React Router</small>
+              <small>CSS</small>
+              <small>Materialize</small>
+              <small>Firebase</small>
+              <small>Firestore</small>
+              <small>HTML</small>
+            </div>
+          </div>
+          <div class="individual-project">
+            <h3 class="important project-links">
+              <a href="https://epic-bassi-b5cf49.netlify.app/">
+                New York Stories
+                <img
+                  src="https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1594172097/new-portfolio-images/arrow_n1cxbt.png"
+                  alt="pointer"
+                  class="arrow"
+              /></a>
+            </h3>
+            <p class="night-paragraph">
+              A simple web app that fetches news and stories from the New York
+              Times API
+            </p>
+            <div class="stacks">
+              <small>JavaScript</small>
+              <small>CSS</small>
+              <small>Materialize</small>
+              <small>New York Times API</small>
+              <small>HTML</small>
+            </div>
+          </div>
+          <div class="individual-project">
+            <h3 class="important project-links">
+              <a href="https://ademolamadelewi1.netlify.app/index.html">
+                Personal Website V1
+                <img
+                  src="https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1594172097/new-portfolio-images/arrow_n1cxbt.png"
+                  alt="pointer"
+                  class="arrow"
+              /></a>
+            </h3>
+            <p class="night-paragraph">
+              My first portfolio website I designed and built in 2019. I learned
+              quite a bit about HTML, CSS and JavaScript. Since then, I think my
+              web development and design skills have improved immensely.
+            </p>
+            <div class="stacks">
+              <small>JavaScript</small>
+              <small>CSS</small>
+              <small>Netlify forms</small>
+              <small>HTML</small>
+            </div>
           </div>
         </div>
       </div>
@@ -234,7 +320,7 @@
         </div>
       </div>
       <div class="socials">
-        <a href="/">
+        <a href="mailto:ademolamadelewi@gmail.com">
           <span class="text">email</span>
           <img
             class="emoji"
@@ -242,7 +328,7 @@
             alt="email"
           />
         </a>
-        <a href="/"
+        <a href="https://github.com/Adem0la_jr"
           ><span class="text">twitter</span
           ><img
             class="emoji"
@@ -250,7 +336,7 @@
             alt="twitter"
           />
         </a>
-        <a href="/"
+        <a href="https://github.com/Ad3mola"
           ><span class="text">github</span
           ><img
             class="emoji"
@@ -258,7 +344,7 @@
             alt="github"
           />
         </a>
-        <a href="/"
+        <a href="https://www.linkedin.com/in/ademola-madelewi-9441a8102/"
           ><span class="text">linkedin</span
           ><img
             class="emoji"
@@ -276,6 +362,7 @@
       />
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./toggle.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

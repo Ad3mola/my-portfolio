@@ -24,13 +24,20 @@ body {
 
 .night {
   background-color: #171c28;
-  stroke: white;
   color: white;
+  transition: all 0.4s ease-in-out;
 }
 .day {
   background-color: #fff;
+
+  color: #444452;
+  transition: all 0.4s ease-in-out;
+}
+.day svg {
   stroke: black;
-  color: black;
+}
+.night svg {
+  stroke: white;
 }
 .introduction {
   max-width: 700px;
@@ -111,7 +118,7 @@ body {
   margin: 2em 0;
 }
 .other-projects p {
-  margin: 1.2em 0;
+  margin: 0.5em 0;
 }
 .background p:first-child {
   margin: 0;
@@ -177,7 +184,8 @@ body {
   transition: all 0.1s linear;
 }
 
-.resume a:hover > .arrow {
+.resume a:hover > .arrow,
+.project-links a:hover > .arrow {
   transform: translateX(30%);
 }
 small {
@@ -223,6 +231,22 @@ footer {
   right: 5px;
   cursor: pointer;
 }
+.individual-project {
+  margin-bottom: 3em;
+}
+.day .contact-email,
+.day .night-paragraph,
+.day .important,
+.day a,
+.day .project-links a,
+.day .resume a,
+.day li {
+  color: #444452;
+  transition: all 0.3s ease-in-out;
+}
+.background a {
+  text-decoration: underline;
+}
 @media (max-width: 768.98px) {
   .intro-tagline,
   .intro_hi {
@@ -266,9 +290,6 @@ footer {
     margin: 1em 0;
     width: 90%;
     margin-left: auto;
-  }
-  .other-projects p {
-    margin: 1em 0;
   }
   .socials .text {
     display: none;

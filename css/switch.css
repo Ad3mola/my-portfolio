@@ -15,6 +15,7 @@
   position: relative;
   cursor: pointer;
   margin: 0 0.3em;
+  transition: all 0.5s ease-in-out;
 }
 .toggle-switch label:after {
   content: "";
@@ -25,13 +26,17 @@
   top: 2px;
   right: 3px;
   border-radius: 100%;
+  transition: all 0.5s linear;
 }
 /* .day .toggle-switch label:after {
     left: 3px;
   } */
 input:checked + label {
-  background-color: white;
+  background-color: rgb(184, 247, 184);
+  transition: all 0.5s ease-in-out;
 }
 input:checked + label:after {
   left: 3px;
+  transition: all 0.5s linear;
 }
+
