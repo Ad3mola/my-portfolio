@@ -100,8 +100,9 @@ body {
   width: 70%;
 }
 .background div,
-.skills-list {
-  width: 80%;
+.skills-list,
+.each-project {
+  width: 70%;
 }
 .background h4,
 .skills h4,
@@ -247,6 +248,12 @@ footer {
 .background a {
   text-decoration: underline;
 }
+.each-project {
+  margin-bottom: 3em;
+}
+.each-project img {
+  margin-bottom: 1em;
+}
 @media (max-width: 768.98px) {
   .intro-tagline,
   .intro_hi {
@@ -276,13 +283,15 @@ footer {
   .other-projects p {
     font-size: 0.9rem;
   }
-  .skills-list {
+  .skills-list,
+  .each-project {
     font-size: 0.9rem;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .background div,
-  .skills-list {
+  .skills-list,
+  .each-project {
     width: 90%;
     margin-left: auto;
   }
@@ -300,6 +309,9 @@ footer {
     transition: all 0.2s ease;
     width: 20px;
     height: 20px;
+  }
+  .each-project {
+    margin-top: 1.5em;
   }
 }
 @media (max-width: 576px) {
