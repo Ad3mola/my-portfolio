@@ -1,2 +1,2 @@
 # my-portfolio
-[a link](https://ademolamadelewi.netlify.com)
+[click here to visit](https://ademolamadelewi.netlify.com)
