@@ -1,6 +1,3 @@
-@import url("./css/switch.css");
-@import url("./css/fonts.css");
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Apercu, "Source Sans Pro", sans-serif;
+  font-family: Apercu, sans-serif;
   padding: 3%;
 }
 .main {
@@ -21,23 +18,21 @@ body {
   width: 90%;
   margin: 3em auto;
 }
-
 .night {
   background-color: #171c28;
-  color: white;
+  color: #fff;
   transition: all 0.4s ease-in-out;
 }
 .day {
   background-color: #fff;
-
   color: #444452;
   transition: all 0.4s ease-in-out;
 }
 .day svg {
-  stroke: black;
+  stroke: #000;
 }
 .night svg {
-  stroke: white;
+  stroke: #fff;
 }
 .introduction {
   max-width: 700px;
@@ -66,7 +61,7 @@ body {
   padding-left: 0.2rem;
 }
 .contact-email {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 400;
   box-shadow: inset 0 -3px 0 #007bff;
@@ -129,16 +124,15 @@ body {
 }
 .important {
   font-weight: 700;
-  color: white;
+  color: #fff;
 }
 .important a {
-  color: white;
+  color: #fff;
 }
 .skills ul {
   list-style-type: none;
   font-weight: 300;
   color: #afafbf;
-  /* margin: 0 2em; */
 }
 .skills ul li {
   line-height: 1.7em;
@@ -184,7 +178,6 @@ body {
   margin-bottom: -0.1em;
   transition: all 0.1s linear;
 }
-
 .resume a:hover > .arrow,
 .project-links a:hover > .arrow {
   transform: translateX(30%);
@@ -270,7 +263,6 @@ footer {
   .other-projects {
     flex-direction: column;
   }
-
   .background p,
   .skills-list ul,
   .background p:first-child {
