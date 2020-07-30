@@ -53,7 +53,7 @@ body {
 }
 .intro-contact {
   font-weight: 300;
-  margin-top: 2.5em;
+  margin-top: 1.5em;
   padding: 0.3rem;
 }
 .intro-contact img {
@@ -251,15 +251,15 @@ footer {
 
 @keyframes downButton {
   0% {
-    transform: translateY(-10%);
+    transform: translateY(-5%);
   }
 
   50% {
-    transform: translateY(10%);
+    transform: translateY(5%);
   }
 
   100% {
-    transform: translateY(-10%);
+    transform: translateY(-5%);
   }
 }
 .down-button {
@@ -269,6 +269,9 @@ footer {
   text-align: center;
   width: 100%;
   animation: downButton 2s ease infinite;
+}
+.down-button a {
+  padding: 0.5em;
 }
 @media (max-width: 768.98px) {
   .intro-tagline,
