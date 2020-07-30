@@ -248,6 +248,28 @@ footer {
 .each-project img {
   margin-bottom: 1em;
 }
+
+@keyframes downButton {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}
+.down-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  animation: downButton 2s ease infinite;
+}
 @media (max-width: 768.98px) {
   .intro-tagline,
   .intro_hi {
