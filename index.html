@@ -38,12 +38,15 @@
       name="keywords"
       content="design,front-end react,development,front-end,front-end developer Nigeria, front end development Nigeria,web, Ad3mola, Ademola, Madelewi, javascript, Unilorin, PWA"
     />
-     <meta name="author" content="Ademola Madelewi">
-  <meta property="og:title" content="Ademola Madelewi: Front End Developer">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Ademola Madelewi: Front End Developer">
-  <meta property="og:url" content="https://ademolamadelewi.netlify.app/">
-  <meta property="og:locale" content="en_US">
+    <meta name="author" content="Ademola Madelewi" />
+    <meta property="og:title" content="Ademola Madelewi: Front End Developer" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="Ademola Madelewi: Front End Developer"
+    />
+    <meta property="og:url" content="https://ademolamadelewi.netlify.app/" />
+    <meta property="og:locale" content="en_US" />
     <meta
       name="google-site-verification"
       content="INJLujB2juL0hGKrKOSdJMqz8eiH7vHPnT-PV4Sr0-0"
@@ -256,9 +259,7 @@
               />
               <div class="important">Docufix</div>
             </a>
-            <p class="night-paragraph">
-              A document tooling web app
-            </p>
+            <p class="night-paragraph">A document tooling web app</p>
           </div>
           <div class="each-project">
             <a href="https://misselegancenigeria.com">
@@ -270,8 +271,8 @@
               <div class="important">Miss Elegance</div>
             </a>
             <p class="night-paragraph">
-              A pageantry PWA where people pay(paystack) to vote for their favorite
-              contestants.
+              A pageantry PWA where people pay(paystack) to vote for their
+              favorite contestants.
             </p>
           </div>
         </div>
@@ -290,7 +291,7 @@
               /></a>
             </h3>
             <p class="night-paragraph">
-             A personal website for an online air personality
+              A personal website for an online air personality
             </p>
             <div class="stacks">
               <small>JavaScript</small>
@@ -374,7 +375,7 @@
           </div>
           <div class="individual-project">
             <h3 class="important project-links">
-              <a href="https://newyorkstories.netlify.app/" >
+              <a href="https://newyorkstories.netlify.app/">
                 New York Stories
                 <img
                   src="https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1594172097/new-portfolio-images/arrow_n1cxbt.png"
@@ -418,6 +419,9 @@
           </div>
         </div>
       </div>
+      <div id="embed-api-auth-container"></div>
+      <div id="chart-container"></div>
+      <div id="view-selector-container"></div>
     </main>
     <footer>
       <div class="developed-by">
@@ -490,5 +494,75 @@
 
       gtag("config", "UA-172306140-1");
     </script> -->
+    <script>
+      (function (w, d, s, g, js, fs) {
+        g = w.gapi || (w.gapi = {});
+        g.analytics = {
+          q: [],
+          ready: function (f) {
+            this.q.push(f);
+          },
+        };
+        js = d.createElement(s);
+        fs = d.getElementsByTagName(s)[0];
+        js.src = "https://apis.google.com/js/platform.js";
+        fs.parentNode.insertBefore(js, fs);
+        js.onload = function () {
+          g.load("analytics");
+        };
+      })(window, document, "script");
+    </script>
+    <script>
+      gapi.analytics.ready(function () {
+        /**
+         * Authorize the user immediately if the user has already granted access.
+         * If no access has been created, render an authorize button inside the
+         * element with the ID "embed-api-auth-container".
+         */
+        gapi.analytics.auth.authorize({
+          container: "embed-api-auth-container",
+          clientid: "REPLACE WITH YOUR CLIENT ID",
+        });
+
+        /**
+         * Create a new ViewSelector instance to be rendered inside of an
+         * element with the id "view-selector-container".
+         */
+        var viewSelector = new gapi.analytics.ViewSelector({
+          container: "view-selector-container",
+        });
+
+        // Render the view selector to the page.
+        viewSelector.execute();
+
+        /**
+         * Create a new DataChart instance with the given query parameters
+         * and Google chart options. It will be rendered inside an element
+         * with the id "chart-container".
+         */
+        var dataChart = new gapi.analytics.googleCharts.DataChart({
+          query: {
+            metrics: "ga:sessions",
+            dimensions: "ga:date",
+            "start-date": "30daysAgo",
+            "end-date": "yesterday",
+          },
+          chart: {
+            container: "chart-container",
+            type: "LINE",
+            options: {
+              width: "100%",
+            },
+          },
+        });
+
+        /**
+         * Render the dataChart on the page whenever a new view is selected.
+         */
+        viewSelector.on("change", function (ids) {
+          dataChart.set({ query: { ids: ids } }).execute();
+        });
+      });
+    </script>
   </body>
 </html>
