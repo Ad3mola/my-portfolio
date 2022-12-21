@@ -84,7 +84,8 @@ body {
 .background,
 .skills,
 .other-projects {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   margin: 7em auto;
   width: 90%;
   justify-content: space-between;
@@ -287,7 +288,7 @@ footer {
   .background,
   .skills,
   .other-projects {
-    flex-direction: column;
+    display: block;
   }
   .background p,
   .skills-list ul,

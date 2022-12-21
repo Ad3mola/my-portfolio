@@ -2,34 +2,25 @@ const featuredContainer = document.querySelector(".featured-container");
 
 const projects = [
   {
-    link: "https://mvsic.netlify.app/",
+    link: "https://hertechchoice.com/",
     imageLink:
-      "https://res.cloudinary.com/ademolamadelewi/image/upload/c_scale,f_auto,q_auto,w_325/v1612574160/farmers/Tabloid_-_1_1_fhc5ec.png",
-    title: "MVSIC",
-    desc: "This is a mvsic web app built on Spotify's API",
+      "https://res.cloudinary.com/ademolamadelewi/image/upload/v1671636406/1-Mockup_ae4w6k.png",
+    title: "Hertechchoice",
+    desc: "Her Tech Choice is a 6-Weeks virtual bootcamp for ladies who are interested in software development. It is an avenue to network and collaborate with other participants with the same drive and vision.",
   },
   {
-    link: "https://fbdashboard.netlify.app/",
+    link: "https://www.goldbar.games/",
     imageLink:
-      "https://res.cloudinary.com/ademolamadelewi/image/upload/c_scale,f_auto,h_325,q_auto/v1594293164/new-portfolio-images/foodbank_u4kkcw.png",
-    title: "Foodbank",
-    desc:
-      "A fintech investment, savings and ecommerce web app built with React, Redux and Laravel.",
+      "https://res.cloudinary.com/ademolamadelewi/image/upload/v1671636401/03-Mockup_etovko.png",
+    title: "Goldbar Games",
+    desc: "A revenue sharing NFT collection with a decentralised gaming platform on the solana blockchain",
   },
   {
-    link: "https://docufix.com.ng",
+    link: "https://elfrique.com",
     imageLink:
-      "https://res.cloudinary.com/ademolamadelewi/image/upload/c_scale,f_auto,h_267,q_auto/v1594293143/new-portfolio-images/docufix_lbujo3.png",
-    title: "Docufix",
-    desc: "A document tooling web app",
-  },
-  {
-    link: "https://misselegancenigeria.com",
-    imageLink:
-      "https://res.cloudinary.com/ademolamadelewi/image/upload/c_scale,f_auto,h_239,q_auto/v1594293153/new-portfolio-images/elegance_mfq0ap.png",
-    title: "Miss Elegance",
-    desc:
-      "A pageantry PWA where people pay(paystack) to vote for their favorite contestants.",
+      "https://res.cloudinary.com/ademolamadelewi/image/upload/v1671636400/04-Mockup_akt2nf.png",
+    title: "Elfrique",
+    desc: "Elfrique is an innovative and complete goal-oriented company, which is into event management services such as event ticketing, voting contest management, trivia management system, event vendor management system, event forms management system and travel & tours management services.",
   },
 ];
 
