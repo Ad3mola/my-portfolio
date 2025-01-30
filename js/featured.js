@@ -9,7 +9,7 @@ const projects = [
     desc: "A web application for seamless flight booking, offering users the ability to search, compare, and book flights online with ease.",
   },
   {
-    link: "https://instantplay.goldbar.games/#/login",
+    link: "https://gold-bar.netlify.app/",
     imageLink:
       "https://res.cloudinary.com/ademolamadelewi/image/upload/q_auto:low/03-Mockup_etovko.webp",
     title: "Goldbar Games",
