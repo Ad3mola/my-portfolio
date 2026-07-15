@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://ademolamadelewi.netlify.com/sitemap.xml
+Sitemap: https://ademolamadelewi.netlify.app/sitemap.xml
